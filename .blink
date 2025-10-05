@@ -1,0 +1,31 @@
+option ClientOutput = "network/client.luau"
+option ServerOutput = "network/server.luau"
+option Typescript = true
+
+event RequestInitialPackets {
+    from: Client,
+    type: Reliable,
+    call: Polling,
+}
+
+event SendInitialPackets {
+    from: Server,
+    type: Reliable,
+    call: Polling,
+    data: (unknown, unknown)
+}
+
+
+event SendReliablePacket {
+    from: Server,
+    type: Reliable,
+    call: Polling,
+    data: (unknown, unknown)
+}
+
+event SendUnreliablePacket {
+    from: Server,
+    type: Unreliable,
+    call: Polling,
+    data: (unknown, unknown)
+}

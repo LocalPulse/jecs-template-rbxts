@@ -1,0 +1,43 @@
+{
+  "name": "ice-slap-tower",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@rbxts/compiler-types": "^3.0.0-types.0",
+    "@rbxts/types": "^1.0.883",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-roblox-ts": "^1.2.1",
+    "prettier": "^3.6.2",
+    "roblox-ts": "^3.0.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@rbxts/jabby": "^0.3.1",
+    "@rbxts/jecs": "^0.9.0",
+    "@rbxts/lapis": "^0.3.8",
+    "@rbxts/log": "^0.6.3",
+    "@rbxts/planck": "^1.0.0",
+    "@rbxts/planck-jabby": "^1.0.0",
+    "@rbxts/planck-runservice": "^1.0.3",
+    "@rbxts/replecs": "^0.1.0-alpha8",
+    "@rbxts/services": "^1.5.5",
+    "@rbxts/t": "^3.2.1",
+    "rbxts-transformer-jecs": "^0.0.6"
+  },
+  "overrides": {
+    "@rbxts/jecs": "^0.9.0"
+  }
+}
